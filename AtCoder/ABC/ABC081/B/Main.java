@@ -1,8 +1,8 @@
-package AtCoder.ABC.ABC081;
+package AtCoder.ABC.ABC081.B;
 
 import java.util.Scanner;
 
-public class B {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
