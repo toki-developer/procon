@@ -10,4 +10,36 @@ public class Main {
 }
 
 
+====================
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class Main {
+    public static void main(String[] args) {
+
+        URL url;
+        try {
+            String line;
+            String url_s1 = /*"http:~~ここにURL";*/"";
+            url = new URL(url_s1);
+            URLConnection conn;
+            conn = url.openConnection();
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            while ((line = in.readLine()) != null) {
+                System.out.println(line);
+            }
+            in.close();
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+================-
 
